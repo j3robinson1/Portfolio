@@ -18,11 +18,14 @@
             = link_to root_path do
               %span.glyphicon.glyphicon-home
           %li
-            Portfolio
+            = link_to portfolios_path do
+              Portfolio
           %li
-            Resume
+            = link_to resumes_path do
+              Resume
           %li
-            About
+            = link_to abouts_path do
+              About
     = yield
     .container
       .header
