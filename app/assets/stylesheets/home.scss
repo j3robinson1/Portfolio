@@ -1,0 +1,31 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #E6F7F4;
+}
+.jumbotron {
+  background-color: #C5DEDA;
+}
+.btn.btn-default.navl, .btn.btn-default.links {
+  background-color: #EDDDDD;
+}
+.btn.btn-default.navl:hover, .btn.btn-default.links:hover {
+  background-color: #E3D1D1;
+}
+.btn.btn-default.green {
+  background-color: #83F795;
+}
+.btn.btn-default.green:hover {
+  background-color: #73DE83;
+}
+.dropdown-menu {
+  text-align: center;
+}
+.jumbotron.forum {
+  text-align:center;
+}
+.y {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %title MySite
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        = javascript_include_tag 'application', 'data-turbolinks-track' => true
+        = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+        = csrf_meta_tags
+  %body
+    //navbar   
+    .masthead
+      %h3.text-muted Jesse Robinson
+      %nav
+        %ul.nav.nav-justified
+          %li.active
+            = link_to root_path do
+              %span.glyphicon.glyphicon-home
+          %li
+            Portfolio
+          %li
+            Resume
+          %li
+            About
+    = yield
+    .container
+      .header
+        %h3.text-muted Jesse Robinson
+      .jumbotron
+        %h1 Jesse Robinson
+        = yield
+        %br
+      .row.marketing
+        .col-lg-6
+          %h4 Portfolio
+          %p Check out the Websites ive made
+          %h4 Resume
+          %p See my qualifications and work history
+          %h4 About
+          %p learn more about me
+        .col-lg-6
