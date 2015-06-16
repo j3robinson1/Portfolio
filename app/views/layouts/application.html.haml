@@ -11,7 +11,9 @@
   %body
     //navbar   
     .masthead
-      %h3.text-muted Jesse Robinson
+      %span
+        %img{:alt => "Jesse_Robinson", :height => "30", :src => "/assets/Jesse_Robinson.jpg", :width => "30"}
+        %h3.text-muted Jesse Robinson
       %nav
         %ul.nav.nav-justified
           %li.active
@@ -26,12 +28,8 @@
           %li
             = link_to abouts_path do
               About
-    = yield
     .container
-      .header
-        %h3.text-muted Jesse Robinson
       .jumbotron
-        %h1 Jesse Robinson
         = yield
         %br
       .row.marketing
