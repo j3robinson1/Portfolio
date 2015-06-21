@@ -11,17 +11,12 @@
   %body
     //navbar   
     .masthead
-      %span
-        %img{:alt => "Jesse_Robinson", :height => "30", :src => "/assets/Jesse_Robinson.jpg", :width => "30"}
-        %h3.text-muted Jesse Robinson
+      %h3.text-muted Jesse Robinson
       %nav
         %ul.nav.nav-justified
           %li.active
             = link_to root_path do
               %span.glyphicon.glyphicon-home
-          %li
-            = link_to portfolios_path do
-              Portfolio
           %li
             = link_to resumes_path do
               Resume
