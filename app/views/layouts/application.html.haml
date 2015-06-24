@@ -29,12 +29,15 @@
         %br
       .row.marketing
         .col-xs-6.col-sm-5
-          %h4 Portfolio
-          %p Check out the Websites ive made
-          %h4 Resume
-          %p See my qualifications and work history
-          %h4 About
-          %p learn more about me
+          =link_to root_path do
+            %h4 Portfolio
+            %p Check out the Websites ive made
+          =link_to resumes_path do
+            %h4 Resume
+            %p See my qualifications and work history\
+          =link_to abouts_path do
+            %h4 About
+            %p learn more about me
         .col-xs-6.col-sm-4
         .col-xs-6.col-sm-3
           %span.pic
